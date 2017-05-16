@@ -1,0 +1,291 @@
+/*
+* profile
+*/
+
+.profile{
+  width: 460px;
+  box-shadow: 0 2px 20px 1px rgba(0, 0, 0, .14), 0 1px 20px 0 rgba(0, 0, 0, .12), 0 3px 10px -2px rgba(0, 0, 0, .2);
+  padding: 8rem 0 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.profile:before{
+  content: "";
+  width: 85px;
+  height: 50px;
+  
+  transition: transform .5s cubic-bezier(0.42, 0.04, 0.13, 0.92);
+  border-radius: 50%;
+  background-color: #7B1FA2;
+
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%) scale(7);
+}
+
+.profile:hover:before{
+  transition: transform .7s cubic-bezier(0.66, 0.09, 0, 1.31);
+}
+
+.profile:hover:before{
+    transform: translateX(-50%) translateY(200%) scale(25);
+}
+
+.profile:hover, .profile:hover .profile__value{
+  color: #fff;
+}
+
+.profile:hover .profile__group, .profile:hover .profile__avatar, .profile:hover .profile__social{
+  border-color: #fff;
+}
+
+.profile:hover .profile__row{
+  background-color: #690394;  
+}
+
+.profile__header{
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.profile__avatar{
+  border-radius: 50%;
+  width: 14rem;
+  height: 14rem;
+  border: 6px solid #7B1FA2;
+  transition: border-color .4s ease-out .1s;
+}
+
+.profile:hover .profile__avatar{
+  transition: border-color .4s ease-out .2s;
+}
+  
+.profile__name{
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 3.5rem;
+  transition: color .4s ease-out .1s;
+}
+
+.profile__post{
+  display: block;
+  font-size: 1.8rem;
+  transition: color .4s ease-out .1s;
+}
+
+.profile__body{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.profile__row{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;  
+  
+  background-color: #f0f0f0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+  position: relative;
+  z-index: 2;
+  transition: background-color .4s ease-out .1s;
+}
+
+.profile:hover .profile__row{
+  transition: background-color .4s ease-out .2s;
+}
+
+.profile__group{
+  box-sizing: border-box;
+  width: 33.3333333%;
+  margin-top: 4rem;
+  transition: border-color .4s ease-out .1s;
+  
+  border-right: 1px solid #BDBDBD;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+}
+
+profile:hover .profile__group{
+  transition: border-color .4s ease-out .4s;
+}
+
+.profile__group:nth-child(1), .profile__group:nth-child(2),
+.profile__group:nth-child(3){
+  margin-top: 0;
+}
+
+.profile__group:nth-child(3n+3){
+  border-right: none;
+}
+
+.profile__param, .profile__value{
+  display: block;
+  transition: color .4s ease-out .1s;
+}
+
+.profile__param{
+  text-transform: uppercase;
+  margin-top: .2rem;
+}
+
+.profile__value{
+  font-size: 3.4rem;
+  color: #7B1FA2;
+  font-weight: 700;
+}
+
+.profile__footer{
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cssui-icon{
+  width: var(--cssuiIconSize, 2em);
+  height: var(--cssuiIconSize, 2em);
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.profile__social{
+  border: 2px solid #7B1FA2;
+  border-radius: 50%;
+
+  margin-left: .8rem;
+  margin-right: .8rem;  
+  padding: 1rem;
+  font-size: .8rem;  
+  
+  position: relative;
+  z-index: 2;
+}
+
+.profile__social:hover{
+  background-color: #7B1FA2;
+}
+
+.cssui-social{
+  display: inline-flex;
+  position: relative;
+}
+
+.cssui-social__name{
+  position: absolute;
+  left: -9999px;
+}
+
+.profile__twitter{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/twitter_purple.svg");
+}
+
+.profile__linkedin{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/linkedin_purple.svg");
+}
+
+.profile__codepen{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/codepen_purple.svg");
+}
+
+.profile:hover  .profile__twitter{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/twitter.svg");
+}
+
+.profile:hover  .profile__linkedin{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/linkedin.svg");
+}
+
+.profile:hover  .profile__codepen{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/codepen.svg");
+}
+
+/*
+* demo styles
+*/
+
+@media screen and (min-width: 769px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px){
+
+  html{
+    font-size: 56%;
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+body{
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  background-image: linear-gradient(29deg, #512DA8 50%, #673AB7 50%);
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover, a:focus{
+  text-decoration: underline;
+}
+
+.page{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.demo{
+  flex-grow: 2;
+}
+
+.main-container{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 640px){
+
+  .footer{
+    font-size: 1.4rem;
+  }
+}
+
+.footer__container{
+  display: flex;
+  justify-content: center;
+}
