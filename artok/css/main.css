@@ -414,6 +414,11 @@ hr.line {
     max-width: 440px;
 }
 
+.proects {
+	color: #231F20;
+	text-align: center;
+}
+
 .img-port {
 	display: inherit;
 	margin: 0 auto;
