@@ -414,6 +414,22 @@ hr.line {
     max-width: 440px;
 }
 
+.img-port {
+	display: inherit;
+	margin: 0 auto;
+	position: relative;
+	left: 0;
+	top: 100%;
+	right: 0;
+	width: 100%;
+	max-width: 440px;
+	transition: 0.5s filter;
+	filter: blur(1px);
+	align-content: stretch;
+}
+.img-port:hover {
+	filter: blur(0px);
+}
 
 #invite {
   background: #f2f2f2;
