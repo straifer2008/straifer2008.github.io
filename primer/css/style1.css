@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Calibri; /* Имя шрифта */
+    src: url(../fonts/calibri.ttf); 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, sans-serif;
+    overflow-x: hidden;
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+.row {
+    position: relative;
+}
+
+.titleMisiion {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.titleMisiion span {
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+.header {
+    margin: 0 auto;
+}
+
+.header .logo img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.nav .navbar li {
+    list-style: none;
+    display: inline-block;
+    border-top: 2px solid #000;
+    width: 20%;
+    margin-right: 30px;
+}
+.nav .navbar li:hover {
+    color: #308cb5;
+    border-top: 2px solid #308cb5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.banerBeries {
+    background: url(../img/Final_Baners.png) no-repeat;
+    background-size: cover;
+    height: 17em;
+}
+
+.missionP {
+    padding-right: 80px;
+}
+
+.fon {
+    position: absolute;
+    background: url(../img/fon.png) no-repeat;
+    left: 0;
+    top: 0;
+    height: 130%;
+    width: 441px; 
+}
+.cinnosti .row {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+}
+.cinnosti i {
+    color: #719ec7;
+    margin-right: 10px;
+}
+
+.cinnosti p {
+    
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.cinnosti span {
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: 11px;
+}
+.cinnosti {
+    margin-bottom: 50px;
+}
+
+.banerHistory {
+    background: url(../img/_banerHistory.png) no-repeat;
+    background-size: cover;
+    height: 17em;
+    color: #fff;
+}
+.fon2 {
+    position: absolute;
+    background-color: #191919;
+    opacity: .6;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 441px;
+}
+.historyP {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #719ec7;
+    box-shadow: 1px 1px 20px #000;
+    height: 1%;
+    width: 100%;
+}
+
+.footer p {
+    text-align: right;
+    margin-right: 200px;
+}
