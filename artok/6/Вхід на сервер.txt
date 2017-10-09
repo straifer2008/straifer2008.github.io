@@ -1,0 +1,3 @@
+ftp://crayfish.ftp.ukraine.com.ua/
+Логин: crayfish_ftp
+Пароль: xgPggg3w
