@@ -423,7 +423,7 @@
                     </span> </div>
                 </div>
                 <div>
-                  <input type="submit" href="mailto:straifer69@gmail.com" value="Send message" class="cform-submit pull-left">
+                  <input type="submit" href="" onclick="sendToMail()" value="Send message" class="cform-submit pull-left">
                 </div>
                 <div class="cform-response-output"></div>
               </form>
