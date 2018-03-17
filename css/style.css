@@ -1210,6 +1210,7 @@ footer p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 }
 .primery-site {
 	font-size: 2em;
