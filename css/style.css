@@ -392,6 +392,7 @@ section.single-page h1 {
 
 section#portfolio {
 	padding-bottom: 0;
+	overflow: hidden;
 }
 section#portfolio h1 {
 	font-size: 3em;
@@ -1269,5 +1270,10 @@ footer p {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	#services h1.our-advantages,
+	section#portfolio h1 P {
+		font-size: 2em;
 	}
 }
