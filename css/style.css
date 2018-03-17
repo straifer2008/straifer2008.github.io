@@ -1237,6 +1237,21 @@ footer p {
 	filter: blur(1px);
 }
 
+.topPhone__wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.topPhoneLink {
+	margin-right: 20px;
+	text-shadow: 0 0 10px rgba(0,0,0,.5);
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
 @keyframes animateArrow {
 	0% {margin-left: 0%;}
 	50% {margin-left: 50%;}
@@ -1274,7 +1289,11 @@ footer p {
 	}
 
 	#services h1.our-advantages,
-	section#portfolio h1 P {
-		font-size: 2em;
+	section#portfolio h1 {
+		font-size: 30px;
+	}
+
+	.topPhone__wrapper {
+		flex-direction: column;
 	}
 }
