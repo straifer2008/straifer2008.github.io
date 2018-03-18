@@ -1,16 +1,12 @@
 <?php
 
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email_address = strip_tags(htmlspecialchars($_POST['email']));
-$phone = strip_tags(htmlspecialchars($_POST['phone']));
-$town = strip_tags(htmlspecialchars($_POST['town']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
+$tel = strip_tags(htmlspecialchars($_POST['tel']));
 
-$login = 'question@sevenkids.site'; // замените test@domain.tld на адрес электронной почты, с которого производится отправка. Поскольку логин совпадает с адресом отправителя - данная переменная используется и как логин, и как адрес отправителя.
+$login = 'fastcoll@sevenkids.site'; // замените test@domain.tld на адрес электронной почты, с которого производится отправка. Поскольку логин совпадает с адресом отправителя - данная переменная используется и как логин, и как адрес отправителя.
 
-$password = 'question2018';  // Замените 'password' на пароль от почтового ящика, с которого производится отправка.
+$password = 'fastcoll2018';  // Замените 'password' на пароль от почтового ящика, с которого производится отправка.
 $to = 'seven.kids.ua@gmail.com';  // замените to@domain.tld на адрес электронной почты получателя письма.
-$text="Имя: ".$name."\nEmail: ".$email_address."\nТелефон: ".$phone."\nГород: ".$town."\nТекст сообщения: \n".'"'.$message.'"';  // Содержимое отправляемого письма
+$text='Номер телефона клиента: '.$tel;  // Содержимое отправляемого письма
 function get_data($smtp_conn)  // функция получения кода ответа сервера.
 {
     $data="";
@@ -25,11 +21,11 @@ function get_data($smtp_conn)  // функция получения кода о�
 $header="Date: ".date("D, j M Y G:i:s")." +0700\r\n";
 $header.="From: =?UTF-8?Q?".str_replace("+","_",str_replace("%","=",urlencode("SEVENKIDS.SITE")))."?= <$login>\r\n";
 $header.="X-Mailer: Test script hosting Ukraine.com.ua \r\n";
-$header.="Reply-To: =?UTF-8?Q?".str_replace("+","_",str_replace("%","=",urlencode("Быстрый вопрос с 'sevenkids.site'")))."?= <$login>\r\n";
+$header.="Reply-To: =?UTF-8?Q?".str_replace("+","_",str_replace("%","=",urlencode("Прозьба передзвонить клиенту")))."?= <$login>\r\n";
 $header.="X-Priority: 3 (Normal)\r\n";
 $header.="Message-ID: <12345654321.".date("YmjHis")."@ukraine.com.ua>\r\n";
 $header.="To: =?UTF-8?Q?".str_replace("+","_",str_replace("%","=",urlencode('Получателю тестового письма')))."?= <$to\r\n";
-$header.="Subject: =?UTF-8?Q?".str_replace("+","_",str_replace("%","=",urlencode("Быстрый вопрос с 'sevenkids.site'")))."?=\r\n";
+$header.="Subject: =?UTF-8?Q?".str_replace("+","_",str_replace("%","=",urlencode("Прозьба передзвонить клиенту с 'sevenkids.site'")))."?=\r\n";
 $header.="MIME-Version: 1.0\r\n";
 $header.="Content-Type: text/plain; charset=UTF-8\r\n";
 $header.="Content-Transfer-Encoding: 8bit\r\n";

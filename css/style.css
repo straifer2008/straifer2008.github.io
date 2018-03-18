@@ -1251,6 +1251,69 @@ footer p {
 	font-size: 20px;
 }
 
+input #phoneInput-top {
+	margin: 0;
+	height: 40px;
+}
+
+.position-relative	{
+	position: relative;
+	height: 45px;
+	margin-bottom: 10px;
+}
+
+.position-relative .form-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.form__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+.question-form {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+input.form-input {
+	width: 100%;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	border: none;
+	border-radius: 8px;
+}
+
+input.form-input-top {
+	width: 25vw;
+	height: 40px;
+	border-radius: 8px;
+	padding: 4px 6px;
+}
+
+.topForm {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
 
 @keyframes animateArrow {
 	0% {margin-left: 0%;}
@@ -1295,5 +1358,13 @@ footer p {
 
 	.topPhone__wrapper {
 		flex-direction: column;
+	}
+
+	.topForm {
+		flex-direction: column;
+	}
+
+	input.form-input-top {
+		width: 80vw;
 	}
 }

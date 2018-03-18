@@ -8,7 +8,6 @@
     <meta name="author" content="">
     <!-- Styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link rel='stylesheet' id='prettyphoto-css'  href="css/prettyPhoto.css" type='text/css' media='all'>
     <link href="css/fontello.css" type="text/css" rel="stylesheet">
     <!--[if lt IE 7]>
@@ -30,6 +29,8 @@
         <![endif]-->
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.PNG">
+
+    <link href="css/style.css" rel="stylesheet">
     <!-- JQuery -->
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -84,9 +85,17 @@
         <div class="container">
           <div class="row">
             <div class="span12">
-              <h2>Подпишись чтобы быть в курсе последних обновлений</h2>
-              <input type="text" name="your-email" placeholder="ваш@mail.com" class="cform-text" size="40" title="your email">
-              <input type="submit" value="Подписаться" class="cform-submit">
+              <h2>Мы Вам передзвоним!!!</h2>
+              <form class="topForm" action="fastColMail.php" method="post">
+                <input required="required"
+                       pattern="+380([0-9]{2})-[0-9]{7}"
+                       type="tel"
+                       name="tel"
+                       placeholder="ваш номер телефона"
+                       id="phoneInput-top"
+                       class="cform-text form-input-top">
+                <input type="submit" value="Отправить" class="cform-submit">
+              </form>
             </div>
           </div>
           <div class="row">
@@ -407,28 +416,28 @@
         <div class="row">
           <div class="span12">
             <div class="cform" id="theme-form">
-              <form action="#" method="post" class="cform-form">
+              <form action="mail.php" method="post" class="cform-form">
                 <div class="row">
-                  <div class="span6"> <span class="your-name">
-                    <input type="text" name="your-name" placeholder="ФИО" class="cform-text" size="40" title="your name">
-                    </span> </div>
-                  <div class="span6"> <span class="your-email">
-                    <input type="text" name="your-email" placeholder="Email" class="cform-text" size="40" title="your email">
-                    </span> </div>
+                  <div class="span6">
+                    <input type="text" name="name" placeholder="ФИО" class="form-input" size="40" title="name">
+                  </div>
+                  <div class="span6">
+                    <input type="text" name="email" placeholder="Email" class="form-input" size="40" title="email">
+                  </div>
                 </div>
                 <div class="row">
-                  <div class="span6"> <span class="company">
-                    <input type="text" name="company" placeholder="Телефон" class="cform-text" size="40" title="company">
-                    </span> </div>
-                  <div class="span6"> <span class="website">
-                    <input type="text" name="website" placeholder="Город" class="cform-text" size="40" title="website">
-                    </span> </div>
+                  <div class="span6">
+                    <input type="text" name="phone" placeholder="Телефон" class="form-input" size="40" title="phone" pattern="+380([0-9]{2})-[0-9]{7}">
+                  </div>
+                  <div class="span6">
+                    <input type="text" name="town" placeholder="Город" class="form-input" size="40" title="town">
+                  </div>
                 </div>
                 <div class="row">
-                  <div class="span12"> <span class="message">
+                  <div class="span12">
                       *
-                    <textarea name="message" placeholder="Быстрый вопрос" class="cform-textarea" cols="40" rows="10" title="drop us a line."></textarea>
-                    </span> </div>
+                    <textarea required="required" name="message" placeholder="Быстрый вопрос" class="cform-textarea" cols="40" rows="10" title="drop us a line."></textarea>
+                  </div>
                 </div>
                 <div>
                   <input type="submit" href="" value="Отправить" class="cform-submit pull-left">
